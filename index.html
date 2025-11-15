@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio| Laiba Hamid</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Laiba Hamid</h1>
+            <p>Software Engineer | Data Analyst | Data Scientist | Web Developer | Creative Problem Solver</p>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            
+            <div class="about-content">
+                <img src="C:\Users\Laiba Hamid\Documents\laiba prac\portfolio\picture.jpg" alt="Laiba Hamid Profile Picture" class="profile-picture">
+                <div>
+                    <p>
+                        Hello! I'm Laiba, a passionate Software Engineering student. My primary interests lie in Data Analytics and Data Science, from cleaning data to managing, visualizing it, and solving problems using data science. I enjoy blending logic and creativity, particularly in frontend development using HTML, CSS,Javascript and Bootstrap. I'm dedicated to leveraging data to drive meaningful insights and create effective digital solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+
+                <article class="project-card">
+                    <h3>MIS for Social Welfare & Bait-ul-Maal, Punjab</h3>
+                    <img src="C:\Users\Laiba Hamid\Documents\laiba prac\portfolio\project image.jpg"alt="Screenshot of MIS Dashboard" class="project-image">
+                    <p>
+                        Designed and implemented aManagement Information System (MIS) for the Institution of Social Welfare and Bait-ul-Maal, Punjab. This government project aimed to streamline data management, resource allocation, and reporting for effective social services.
+                    </p>
+                    <a href="#" class="btn">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>AI-Based Cryptocurrency Anomaly Detection</h3>
+                    <img src="C:\Users\Laiba Hamid\Documents\laiba prac\portfolio\cryptocyrrence.png" alt="Screenshot of Cryptocurrency Anomaly Model" class="project-image">
+                    <p>
+                        Developed an AI-based Anomaly Detection Model focused on identifying market manipulation and unusual trading patterns within cryptocurrency markets. This project utilizes advanced data science techniques for forecasting and risk assessment.
+                    </p>
+                    <a href="#" class="btn">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Mental Health Analysis Dashboard</h3>
+                    <img src="C:\Users\Laiba Hamid\Documents\laiba prac\portfolio\Mental Stress Dashboard.png" alt="Screenshot of Mental Health Dashboard" class="project-image">
+                    <p>
+                        A comprehensive data analysis project using Python (for cleaning and organizing data) and Tableau (for visualization). The resulting dashboard provides key insights into mental health trends using MySQL for data backend.
+                    </p>
+                    <a href="#" class="btn">View Project</a>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Interested in working together?Please fill out the form below!</p>
+
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="prefer-not-say">Prefer not to say</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="150">
+                </div>
+                
+                <div class="form-group hobbies-group">
+                    <label>Hobbies:</label>
+                    <div class="checkbox-options">
+                        <label><input type="checkbox" name="hobbies[]" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="hobbies[]" value="coding"> Coding</label>
+                        <label><input type="checkbox" name="hobbies[]" value="hiking"> Hiking</label>
+                        <label><input type="checkbox" name="hobbies[]" value="photography"> Photography</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group location-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country">
+                </div>
+
+                <div class="form-group location-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://linkedin/in/laiba-hamid-2a6b8534a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/laiba-beep" target="_blank" aria-label="GitHub"><i class="fab fa-github-square fa-2x"></i></a>
+                </div>
+            <p>&copy; 2025 Laiba Hamid. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+            
+            const icon = document.querySelector('.menu-toggle i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times'); 
+        }
+    </script>
+
+</body>
+</html>
